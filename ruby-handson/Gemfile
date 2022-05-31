@@ -1,0 +1,2 @@
+
+gem 'bitcoinrb', require: 'bitcoin'

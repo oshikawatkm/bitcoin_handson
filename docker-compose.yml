@@ -1,0 +1,25 @@
+version: "3"
+services:
+  node-1:
+    image: ruimarinho/bitcoin-core:0.20.1
+    container_name: 'bitcoin_1'
+    tty: true
+    stdin_open: true
+    ports:
+      - "18443:18443"
+    volumes:
+      - ./bitcoin.conf:/home/bitcoin/.bitcoin/bitcoin.conf
+    links:
+    - node-2
+  node-2:
+    image: ruimarinho/bitcoin-core:0.20.1
+    container_name: 'bitcoin_2'
+    tty: true
+    stdin_open: true
+    ports:
+      - "28443:28443"
+    volumes:
+      - ./bitcoin2.conf:/home/bitcoin/.bitcoin/bitcoin.conf
+  ruby:
+    build:
+      context: ./ruby-handson
