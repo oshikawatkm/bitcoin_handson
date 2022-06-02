@@ -4,7 +4,7 @@
 本ハンズオンではDockerを用いて2角bitcoindノードを建て、それぞれに作成したwalletで送受金、JSON-RPCを用いてプログラムを書きながらBitcoinの動きを学ぶ。
 
 ```
-$ git clone 
+$ git clone https://github.com/oshikawatkm/bitcoin_handson.git
 ```
 ## Bitcoin CLI
 

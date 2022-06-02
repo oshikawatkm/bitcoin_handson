@@ -4,7 +4,7 @@ Bitcoin.chain_params = :regtest
 
 config = {
   schema: 'http',
-  host: '0.0.0.0',
+  host: 'node-1',
   port: 18443,
   user: 'user',
   password: 'pass'

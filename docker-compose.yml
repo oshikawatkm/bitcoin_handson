@@ -21,5 +21,6 @@ services:
     volumes:
       - ./bitcoin2.conf:/home/bitcoin/.bitcoin/bitcoin.conf
   ruby:
-    build:
-      context: ./ruby-handson
+    image: ruby:2.7.0
+    build: ./ruby-handson
+    tty: true
