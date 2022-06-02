@@ -148,7 +148,7 @@ Bitcoinの送金には以下の2つの方法がある。
 実行すると文字列が帰ってくる。これはtransaction id。あとで使うので控えておく。
 
 ```
-$ bitcoin-cli -rpcwallet=wallet1 sendtoaddress <wallet2のアドレス> 0.01
+$ bitcoin-cli -regtest -rpcuser=user -rpcpassword=pass -rpcwallet=wallet1 sendtoaddress <wallet2のアドレス> 0.01
 76e72b6683b7a408f884cd5dd4cee5050d360cb8f32f5bb8627c7c64d6b89926
 ```
 
